@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "kalyara esteve aqui"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    lang: pt
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
