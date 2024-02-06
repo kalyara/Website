@@ -3,17 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "kalyara esteve aqui"
+  title: "kalyara"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: início
+      - projetos.qmd 
+      
+      
 
 format:
   html:
-    lang: pt
-    theme: cosmo
+    theme: united
     css: styles.css
     toc: true
 

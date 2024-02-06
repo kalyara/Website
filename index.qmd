@@ -1,10 +1,17 @@
 ---
-title: "kalyara esteve aqui"
+title: "kalyara"
+image: foto1.jpg
+about:
+  template: jolla
+  links: 
+    - icon: instagram
+      text: Instagram
+      href: https://www.instagram.com/kalyara_/
+    - icon: github
+      text: GitHub
+      href: https://github.com/kalyara
 ---
 
-oiiii
-oiii
-oii XD
-```{r}
-1 + 1
-```
+## Graduanda em Estatística pela UFU
+
+## Técnico de rede de computadores pelo IFTM

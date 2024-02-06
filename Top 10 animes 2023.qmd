@@ -1,0 +1,29 @@
+---
+title: "Top 10 animes mais vistos em 2023" 
+author: "Kalyara Oliveira Morais" 
+date: "06/02/2024" 
+format: html 
+editor: visual 
+---
+
+### Nessa sessão apresento a raspagaem da lista dos animes mais vistos em 2023 de acordo com o site: https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1
+
+\`\`\`\`\`\`\`\`\`\`\`\`\`\`{r} install.packages("rvest") install.packages("httr") install.packages("tidyverse") install.packages("stringr") library(tidyverse) library(rvest) library(httr) library(stringr)
+
+url \<- "https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1"
+
+headers \<- c( "User-Agent" = "Chrome/58.0.3029.110" )
+
+response \<-GET(url, add_headers(headers))
+
+html \<-read_html(content(response, "text"))
+
+html \<- read_html(url)
+
+top10animes \<- html \|\> html_elements("h1") \|\> html_text2()
+
+top10animes
+
+\`\`\`\`\`\`\`\`\`\`\`\`\`
+
+top10animes
