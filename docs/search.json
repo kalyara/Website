@@ -16,8 +16,29 @@
   {
     "objectID": "projetos.html",
     "href": "projetos.html",
-    "title": "Projetos:",
+    "title": "Projetos",
     "section": "",
-    "text": "No matching items"
+    "text": "Top_10_animes_2023\n\n\n\n\n\n\n\n\n\n\n\nFeb 8, 2024\n\n\nKalyara Oliveira Morais\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html#técnico-de-rede-de-computadores-pelo-iftm",
+    "href": "about.html#técnico-de-rede-de-computadores-pelo-iftm",
+    "title": "kalyara",
+    "section": "Técnico de rede de computadores pelo IFTM",
+    "text": "Técnico de rede de computadores pelo IFTM"
+  },
+  {
+    "objectID": "Top_10_animes_2023.html",
+    "href": "Top_10_animes_2023.html",
+    "title": "Top_10_animes_2023",
+    "section": "",
+    "text": "Nessa sessão apresento a raspagaem da lista dos animes mais vistos em 2023 de acordo com o site: https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1\ninstall.packages(“rvest”) install.packages(“httr”) install.packages(“tidyverse”) install.packages(“stringr”) library(tidyverse) library(rvest) library(httr) library(stringr)\nurl &lt;- “https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1”\nheaders &lt;- c( “User-Agent” = “Chrome/58.0.3029.110” )\nresponse &lt;-GET(url, add_headers(headers))\nhtml &lt;-read_html(content(response, “text”))\nhtml &lt;- read_html(url)\ntop10animes &lt;- html |&gt; html_elements(“h1”) |&gt; html_text2()\ntop10animes\n``````````\ntop10animes\n[1] “Os 10 anime mais vistos em 2023 [Séries]”\n[2] “”\n[3] “Dr. Stone: New World”\n[4] “Mushoku Tensei: Jobless Reincarnation Season 2”\n[5] “Vinland Saga Season 2”\n[6] “Mashle”\n[7] “Zom 100: Bucket List of the Dead”\n[8] “Heavenly Delusion”\n[9] “Jigokuraku”\n[10] “Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc” [11] “Jujutsu Kaisen 2nd Season”\n[12] “Oshi no Ko”"
+  },
+  {
+    "objectID": "Top_10_animes_2023.html#os-10-anime-mais-vistos-em-2023-séries",
+    "href": "Top_10_animes_2023.html#os-10-anime-mais-vistos-em-2023-séries",
+    "title": "Top_10_animes_2023",
+    "section": "Os 10 anime mais vistos em 2023 [Séries]",
+    "text": "Os 10 anime mais vistos em 2023 [Séries]\n[1] “Dr. Stone: New World”\n[2] “Mushoku Tensei: Jobless Reincarnation Season 2”\n[3] “Vinland Saga Season 2”\n[4] “Mashle”\n[5] “Zom 100: Bucket List of the Dead”\n[6] “Heavenly Delusion”\n[7] “Jigokuraku”\n[8] “Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc”\n[9] “Jujutsu Kaisen 2nd Season”\n[10] “Oshi no Ko”"
   }
 ]

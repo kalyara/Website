@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kalyara Oliveira Morais">
+<meta name="dcterms.date" content="2024-02-08">
 
-<title>kalyara - Projetos</title>
+<title>kalyara - Top_10_animes_2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,12 +32,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -153,7 +94,7 @@ window.Quarto = {
 <span class="menu-text">início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projetos.html" aria-current="page"> 
+    <a class="nav-link" href="./projetos.html"> 
 <span class="menu-text">Projetos</span></a>
   </li>  
 </ul>
@@ -168,69 +109,73 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#nessa-sessão-apresento-a-raspagaem-da-lista-dos-animes-mais-vistos-em-2023-de-acordo-com-o-site-httpspt.ign.comanime133585galleryos-10-anime-mais-vistos-em-2023-seriesp1" id="toc-nessa-sessão-apresento-a-raspagaem-da-lista-dos-animes-mais-vistos-em-2023-de-acordo-com-o-site-httpspt.ign.comanime133585galleryos-10-anime-mais-vistos-em-2023-seriesp1" class="nav-link active" data-scroll-target="#nessa-sessão-apresento-a-raspagaem-da-lista-dos-animes-mais-vistos-em-2023-de-acordo-com-o-site-httpspt.ign.comanime133585galleryos-10-anime-mais-vistos-em-2023-seriesp1">Nessa sessão apresento a raspagaem da lista dos animes mais vistos em 2023 de acordo com o site: https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1</a></li>
+  <li><a href="#código-utilizado" id="toc-código-utilizado" class="nav-link" data-scroll-target="#código-utilizado">Código utilizado:</a></li>
+  <li><a href="#os-10-anime-mais-vistos-em-2023-séries" id="toc-os-10-anime-mais-vistos-em-2023-séries" class="nav-link" data-scroll-target="#os-10-anime-mais-vistos-em-2023-séries">Os 10 anime mais vistos em 2023 [Séries]</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla content">
+  <img src="foto_anime.png" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projetos</h1>
+<h1 class="title">Top_10_animes_2023</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kalyara Oliveira Morais </p>
+          </div>
   </div>
-  
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 8, 2024</p>
+    </div>
+  </div>
+  </div>
+</header><main class="content" id="quarto-document-content">
+
+<section id="nessa-sessão-apresento-a-raspagaem-da-lista-dos-animes-mais-vistos-em-2023-de-acordo-com-o-site-httpspt.ign.comanime133585galleryos-10-anime-mais-vistos-em-2023-seriesp1" class="level3">
+<h3 data-anchor-id="nessa-sessão-apresento-a-raspagaem-da-lista-dos-animes-mais-vistos-em-2023-de-acordo-com-o-site-httpspt.ign.comanime133585galleryos-10-anime-mais-vistos-em-2023-seriesp1">Nessa sessão apresento a raspagaem da lista dos animes mais vistos em 2023 de acordo com o site: https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1</h3>
+</section>
+<section id="código-utilizado" class="level3">
+<h3 data-anchor-id="código-utilizado">Código utilizado:</h3>
+<p>install.packages(“rvest”) install.packages(“httr”) install.packages(“tidyverse”) install.packages(“stringr”) library(tidyverse) library(rvest) library(httr) library(stringr)</p>
+<p>url &lt;- “https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1”</p>
+<p>headers &lt;- c( “User-Agent” = “Chrome/58.0.3029.110” )</p>
+<p>response &lt;-GET(url, add_headers(headers))</p>
+<p>html &lt;-read_html(content(response, “text”))</p>
+<p>html &lt;- read_html(url)</p>
+<p>top10animes &lt;- html |&gt; html_elements(“h1”) |&gt; html_text2()</p>
+<p>top10animes</p>
+<p>``````````</p>
+<p>top10animes</p>
+</section>
+<section id="os-10-anime-mais-vistos-em-2023-séries" class="level2">
+<h2 data-anchor-id="os-10-anime-mais-vistos-em-2023-séries">Os 10 anime mais vistos em 2023 [Séries]</h2>
+<p>[1] “Dr.&nbsp;Stone: New World”</p>
+<p>[2] “Mushoku Tensei: Jobless Reincarnation Season 2”</p>
+<p>[3] “Vinland Saga Season 2”</p>
+<p>[4] “Mashle”</p>
+<p>[5] “Zom 100: Bucket List of the Dead”</p>
+<p>[6] “Heavenly Delusion”</p>
+<p>[7] “Jigokuraku”</p>
+<p>[8] “Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc”</p>
+<p>[9] “Jujutsu Kaisen 2nd Season”</p>
+<p>[10] “Oshi no Ko”</p>
 
 
-</header>
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1707361200000" data-listing-file-modified-sort="1707403967962" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
-<div class="thumbnail">
-<p><a href="./Top_10_animes_2023.html" class="no-external"></a></p><a href="./Top_10_animes_2023.html" class="no-external">
-<p><img src="./foto_anime.png" class="thumbnail-image"></p>
-</a><p><a href="./Top_10_animes_2023.html" class="no-external"></a></p>
+</section>
+</main>  
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Top_10_animes_2023.html" class="no-external">Top_10_animes_2023</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Top_10_animes_2023.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./Top_10_animes_2023.html" class="no-external">install.packages(“rvest”) install.packages(“httr”) install.packages(“tidyverse”) install.packages(“stringr”) library(tidyverse) library(rvest) library(httr) library(stringr)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Top_10_animes_2023.html" class="no-external">
-<div class="listing-date">
-Feb 8, 2024
-</div>
-<div class="listing-author">
-Kalyara Oliveira Morais
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -251,13 +196,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

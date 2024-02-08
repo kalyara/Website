@@ -1,0 +1,67 @@
+---
+title: "Top_10_animes_2023" 
+author: "Kalyara Oliveira Morais" 
+date: "02/08/2024" 
+image: foto_anime.png
+about:
+  template: jolla
+---
+
+### Nessa sessão apresento a raspagaem da lista dos animes mais vistos em 2023 de acordo com o site: https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1
+
+### Código utilizado: 
+
+
+``````````````{r}
+
+install.packages("rvest") 
+install.packages("httr") 
+install.packages("tidyverse") 
+install.packages("stringr") 
+library(tidyverse) 
+library(rvest) 
+library(httr) 
+library(stringr)
+
+url <- "https://pt.ign.com/anime/133585/gallery/os-10-anime-mais-vistos-em-2023-series?p=1"
+
+headers <- c( "User-Agent" = "Chrome/58.0.3029.110" )
+
+response <-GET(url, add_headers(headers))
+
+html <-read_html(content(response, "text"))
+
+html <- read_html(url)
+
+top10animes <- html |> html_elements("h1") |> html_text2()
+
+top10animes
+
+``````````
+
+top10animes 
+
+
+## Os 10 anime mais vistos em 2023 [Séries] 
+
+ 
+ [1] "Dr. Stone: New World" 
+ 
+ [2] "Mushoku Tensei: Jobless Reincarnation Season 2" 
+ 
+ [3] "Vinland Saga Season 2" 
+ 
+ [4] "Mashle"   
+ 
+ [5] "Zom 100: Bucket List of the Dead" 
+ 
+ [6] "Heavenly Delusion" 
+ 
+ [7] "Jigokuraku" 
+ 
+[8] "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc" 
+
+[9] "Jujutsu Kaisen 2nd Season" 
+
+[10] "Oshi no Ko" 
+

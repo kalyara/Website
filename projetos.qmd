@@ -1,6 +1,7 @@
 ---
 title: "Projetos"
-listing: default 
+listing: 
   contents: 
-  -"top 10 animes 2023/*.qmd"
+  - "Top_10_animes_2023.qmd"
+
 ---
